@@ -3,16 +3,19 @@
 class PageController {
     public function home()
     {
-        echo "home ".time();
+        $content = "I'm in the homepage";
+        require 'views/view.php';
     }
 
     public function folder1()
     {
-        echo "folder1 ".time();
+        $content = "I'm in folder1";
+        require 'views/view.php';
     }
 
     public function folder2()
     {
-        echo "folder2 ".time();
+        $content = "I'm in folder2";
+        require 'views/view.php';
     }
 }
