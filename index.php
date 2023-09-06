@@ -1,3 +1,7 @@
 <?php
-echo time();
-echo " / " . $_SERVER['REQUEST_URI'];
+
+include("controllers/PageController.php");
+include("routes/router.php");
+
+$router = new Router();
+$router->getPath($_SERVER['REQUEST_URI']);
